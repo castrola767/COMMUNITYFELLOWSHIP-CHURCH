@@ -317,11 +317,7 @@ $firstId   = $hasVideos ? $videos[0][0] : '';
       <?php if(!$hasVideos): ?>
       <div class="add-videos-hint">
         <p>
-          📌 <strong style="color:rgba(255,255,255,.6);">To show your videos here:</strong>
-          open <code>sermons.php</code>, find the <code>$videos</code> array near the top,
-          uncomment each line and replace <code>VIDEO_ID_HERE</code> with the 11-character ID
-          from each YouTube video URL — e.g. <code>youtube.com/watch?v=<strong>dQw4w9WgXcQ</strong></code>.<br><br>
-          Until then, visitors can watch your sermons by clicking
+          
           <a href="<?= $ytChannel ?>" target="_blank" style="color:#ff6666;">Visit Our Channel</a> below.
         </p>
       </div>
