@@ -41,7 +41,7 @@
       <div class="col-6 col-md-3">
         <h6 class="cfc-footer-heading">Contact</h6>
         <ul class="list-unstyled cfc-footer-links">
-          <li><i class="bi bi-telephone-fill me-2 text-cfc-light"></i>+254 7...</li>
+          <li><i class="bi bi-telephone-fill me-2 text-cfc-light"></i>+254 706 692 733</li>
           <li><a href="mailto:cfckanyariri12@gmail.com"><i class="bi bi-envelope-fill me-2 text-cfc-light"></i>cfckanyariri12@gmail.com</a></li>
           <li><i class="bi bi-mailbox me-2 text-cfc-light"></i>P.O Box 39149–00623</li>
           <li><a href="https://www.facebook.com/CommunityFellowshipChurch" target="_blank"><i class="bi bi-facebook me-2 text-cfc-light"></i>Facebook Page</a></li>
