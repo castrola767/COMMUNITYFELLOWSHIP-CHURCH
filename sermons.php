@@ -17,9 +17,9 @@ $ytChannel = 'https://www.youtube.com/@' . $ytHandle;
 $videos = [
   ['Ly4BFGG7Iwc', 'Travelling on the Righteous Path', 'Elder Godfrey Kamau',   'Mar 8, 2026',  'Proverbs 12:28'],
   ['i1IOOkHHW6k', 'The Lord of the Harvest',          'Rev. Beatrice Kamau',   'Mar 1, 2026',  'Matthew 9:37–38'],
-  ['EsPIjZ74oVc', 'Growing Spiritually',              'Pst. William Mwaura',   'Jan 12, 2025', '2 Peter 3:18'],
-  ['ufMmoWg77x0', 'Building the Purposes of God',     "Pst. Esther Ng'ang'a",  'Oct 5, 2025',  'Luke 1:38'],
-  ['ElkpboQWKQc', 'Repairing the Broken Altars',      'Pst. Peter Njue',       'Jul 27, 2025', '1 Kings 18:16–46'],
+  ['VQnyyk2NiT0', ': HOLY SPIRIT & WITNESS PART 2 - IN ONE ACCORD',              'Pst. Dan Mburu',   ' Feb 22, 2026', ' Acts 2:1'],
+  ['Xwa0ebeDIqs', 'HOLY SPIRIT AND WITNESS PART 1',     "Pst. Dan Mburu",  'Feb 15, 2026',  ' Acts 1:8,Acts 2:1-3,Psalms 1:1-3'],
+  ['W9fLu6Bn6dk', ' Living like a Christian',      'Elder Godfrey Kamau',       'Feb 08, 2026', 'Gen 37:18-32 | Gen 45:3-5'],
 ];
 $hasVideos = !empty($videos);
 ?>
