@@ -22,41 +22,7 @@ $coreValues = [
   </div>
 </div>
 
-<!-- LEADERS PREVIEW -->
-<section style="background:var(--offwhite);padding:var(--sp-v) var(--sp-h);">
-  <div class="inner">
-    <div style="text-align:center;margin-bottom:1.5rem;">
-      <span class="section-label">Leadership</span>
-      <h2 class="section-title">Meet Our <em>Leaders</em></h2>
-      <p style="color:var(--muted);max-width:520px;margin:.5rem auto 0;line-height:1.85;font-size:clamp(.82rem,2vw,.94rem);">Servant leadership is one of our core values. Our pastors, elders, and ministry leaders are ordinary people who responded in faith to God's call.</p>
-    </div>
-    <div class="lp-grid">
-      <?php
-      $lp = [
-        ['✝️','Bishop J. Kamau','Senior Pastor & Founder','founder'],
-        ['🕊️','Rev. B. Kamau','Co-Founder','founder'],
-        ['🔥','Pastor Daniel Mburu','Resident Pastor',''],
-      ];
-      foreach($lp as $l):
-        $f = $l[3]==='founder';
-        $border = $f ? 'border:1.5px solid rgba(19,127,235,.3);' : 'border:1.5px solid var(--border);';
-        $grad   = $f ? 'var(--blue),var(--purple)' : 'var(--navy),#3a1060';
-      ?>
-      <div class="lp-card" style="<?php echo $border;?>">
-        <div class="lp-avatar" style="background:linear-gradient(135deg,<?php echo $grad;?>);"><?php echo $l[0];?></div>
-        <?php if($f):?><div><span class="lp-badge">FOUNDER</span></div><?php endif;?>
-        <div class="lp-name"><?php echo $l[1];?></div>
-        <div class="lp-role"><?php echo $l[2];?></div>
-      </div>
-      <?php endforeach;?>
-    </div>
-    <div style="text-align:center;">
-      <a href="leaders.php" class="btn-primary">View Full Leader Profiles →</a>
-    </div>
-  </div>
-</section>
-
-<!-- WHO WE ARE -->
+<!-- 1. WHO WE ARE — now first after hero -->
 <section style="background:white;padding:var(--sp-v) var(--sp-h);">
   <div class="inner about-grid">
     <div>
@@ -100,37 +66,8 @@ $coreValues = [
   </div>
 </section>
 
-<!-- HISTORY -->
+<!-- 2. VISION & MISSION -->
 <section style="background:var(--offwhite);padding:var(--sp-v) var(--sp-h);">
-  <div class="inner">
-    <span class="section-label">Our History</span>
-    <h2 class="section-title">The Story of <em>God's Faithfulness</em></h2>
-    <p style="color:var(--muted);line-height:1.85;max-width:660px;margin-bottom:1.6rem;font-size:clamp(.82rem,2vw,.94rem);">CFC's history is one of faith, obedience, and relational authenticity — ordinary people who responded to God's leading and built something extraordinary together.</p>
-    <div class="tl-wrap">
-      <?php
-      $history = [
-        ['2004','A Call to Return','Bishop Kamau relocated to the United States with his family. Three months later he experienced a vision accompanied by an audible instruction to return to Kenya and begin ministry. The family returned home in obedience to God\'s call.',''],
-        ['2005','Marriage Enrichment Fellowship Begins','Bishop Kamau and Rev. Beatrice developed a deep burden for marriages. They launched a marriage enrichment fellowship, creating a safe environment where couples could receive biblical guidance and mutual encouragement.','"They created a safe, supportive environment where couples could receive biblical guidance and mutual encouragement." — Rev. B. Kamau'],
-        ['2005–2006','Organic Growth','The fellowship grew rapidly as participants invited others. What began as a living-room gathering evolved into structured meetings featuring prayer, teaching, and counselling. Several unbelieving spouses encountered faith and committed their lives to Christ.','"Seeing families restored and individuals come to faith confirmed that God was at work among us." — H. Mirara'],
-        ['July 2007','Officially Established &amp; Registered','CFC was officially registered with the Registrar of Societies in Kenya. Leadership roles emerged according to spiritual gifting, and early ministries included prayer coordination, marriage counselling, and youth mentorship.','"We realised that God was forming a community, not just hosting meetings." — H. Mirara'],
-        ['Growing Years','Expanding Ministries','Key milestones included acquiring a worship space, launching children\'s and youth ministries, formalising membership, and planting new churches.','"Every step forward required faith, sacrifice, and a willingness to remain flexible to God\'s leading." — W. Mwaura'],
-        ['Today','Still Going Forward','CFC continues to serve Kanyariri and beyond — balancing structure with relational authenticity and fostering a sense of ownership among its members.','"Our history reminds us that God builds His church through ordinary people who respond in faith." — R. Gachoka'],
-      ];
-      foreach($history as $h):?>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-year"><?php echo $h[0];?></div>
-        <h4><?php echo $h[1];?></h4>
-        <p><?php echo $h[2];?></p>
-        <?php if($h[3]):?><div class="q-card" style="margin-top:.7rem;"><p style="font-size:.8rem;"><?php echo $h[3];?></p></div><?php endif;?>
-      </div>
-      <?php endforeach;?>
-    </div>
-  </div>
-</section>
-
-<!-- VISION & MISSION -->
-<section style="background:white;padding:var(--sp-v) var(--sp-h);">
   <div class="inner">
     <span class="section-label">Our Direction</span>
     <h2 class="section-title">Vision &amp; <em>Mission</em></h2>
@@ -149,8 +86,8 @@ $coreValues = [
   </div>
 </section>
 
-<!-- CORE VALUES -->
-<section style="background:var(--offwhite);padding:var(--sp-v) var(--sp-h);">
+<!-- 3. CORE VALUES -->
+<section style="background:white;padding:var(--sp-v) var(--sp-h);">
   <div class="inner">
     <span class="section-label">What Guides Us</span>
     <h2 class="section-title">Our <em>Core Values</em></h2>
@@ -167,7 +104,36 @@ $coreValues = [
   </div>
 </section>
 
-<!-- COMMUNITY IMPACT -->
+<!-- 4. HISTORY -->
+<section style="background:var(--offwhite);padding:var(--sp-v) var(--sp-h);">
+  <div class="inner">
+    <span class="section-label">Our History</span>
+    <h2 class="section-title">The Story of <em>God's Faithfulness</em></h2>
+    <p style="color:var(--muted);line-height:1.85;max-width:660px;margin-bottom:1.6rem;font-size:clamp(.82rem,2vw,.94rem);">CFC's history is one of faith, obedience, and relational authenticity — ordinary people who responded to God's leading and built something extraordinary together.</p>
+    <div class="tl-wrap">
+      <?php
+      $history = [
+        ['2004','A Call to Return','Bishop Kamau relocated to the United States with his family. Three months later he experienced a vision accompanied by an audible instruction to return to Kenya and begin ministry. The family returned home in obedience to God\'s call.',''],
+        ['2005','Marriage Enrichment Fellowship Begins','Bishop Kamau and Rev. Beatrice developed a deep burden for marriages. They launched a marriage enrichment fellowship, creating a safe environment where couples could receive biblical guidance and mutual encouragement.','\"They created a safe, supportive environment where couples could receive biblical guidance and mutual encouragement.\" — Rev. B. Kamau'],
+        ['2005–2006','Organic Growth','The fellowship grew rapidly as participants invited others. What began as a living-room gathering evolved into structured meetings featuring prayer, teaching, and counselling. Several unbelieving spouses encountered faith and committed their lives to Christ.','\"Seeing families restored and individuals come to faith confirmed that God was at work among us.\" — H. Mirara'],
+        ['July 2007','Officially Established &amp; Registered','CFC was officially registered with the Registrar of Societies in Kenya. Leadership roles emerged according to spiritual gifting, and early ministries included prayer coordination, marriage counselling, and youth mentorship.','\"We realised that God was forming a community, not just hosting meetings.\" — H. Mirara'],
+        ['Growing Years','Expanding Ministries','Key milestones included acquiring a worship space, launching children\'s and youth ministries, formalising membership, and planting new churches.','\"Every step forward required faith, sacrifice, and a willingness to remain flexible to God\'s leading.\" — W. Mwaura'],
+        ['Today','Still Going Forward','CFC continues to serve Kanyariri and beyond — balancing structure with relational authenticity and fostering a sense of ownership among its members.','\"Our history reminds us that God builds His church through ordinary people who respond in faith.\" — R. Gachoka'],
+      ];
+      foreach($history as $h):?>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year"><?php echo $h[0];?></div>
+        <h4><?php echo $h[1];?></h4>
+        <p><?php echo $h[2];?></p>
+        <?php if($h[3]):?><div class="q-card" style="margin-top:.7rem;"><p style="font-size:.8rem;"><?php echo $h[3];?></p></div><?php endif;?>
+      </div>
+      <?php endforeach;?>
+    </div>
+  </div>
+</section>
+
+<!-- 5. COMMUNITY IMPACT -->
 <section style="background:white;padding:var(--sp-v) var(--sp-h);">
   <div class="inner cfc-2col-grid">
     <div>
@@ -203,8 +169,42 @@ $coreValues = [
   </div>
 </section>
 
-<!-- LEGACY -->
+<!-- 6. LEADERS PREVIEW -->
 <section style="background:var(--offwhite);padding:var(--sp-v) var(--sp-h);">
+  <div class="inner">
+    <div style="text-align:center;margin-bottom:1.5rem;">
+      <span class="section-label">Leadership</span>
+      <h2 class="section-title">Meet Our <em>Leaders</em></h2>
+      <p style="color:var(--muted);max-width:520px;margin:.5rem auto 0;line-height:1.85;font-size:clamp(.82rem,2vw,.94rem);">Servant leadership is one of our core values. Our pastors and ministry leaders are ordinary people who responded in faith to God's call.</p>
+    </div>
+    <div class="lp-grid">
+      <?php
+      $lp = [
+        ['✝️','Bishop J. Kamau','Senior Pastor & Founder','founder'],
+        ['🕊️','Rev. B. Kamau','Co-Founder','founder'],
+        ['🔥','Pastor Daniel Mburu','Resident Pastor',''],
+      ];
+      foreach($lp as $l):
+        $f = $l[3]==='founder';
+        $border = $f ? 'border:1.5px solid rgba(19,127,235,.3);' : 'border:1.5px solid var(--border);';
+        $grad   = $f ? 'var(--blue),var(--purple)' : 'var(--navy),#3a1060';
+      ?>
+      <div class="lp-card" style="<?php echo $border;?>">
+        <div class="lp-avatar" style="background:linear-gradient(135deg,<?php echo $grad;?>);"><?php echo $l[0];?></div>
+        <?php if($f):?><div><span class="lp-badge">FOUNDER</span></div><?php endif;?>
+        <div class="lp-name"><?php echo $l[1];?></div>
+        <div class="lp-role"><?php echo $l[2];?></div>
+      </div>
+      <?php endforeach;?>
+    </div>
+    <div style="text-align:center;">
+      <a href="leaders.php" class="btn-primary">View Full Leader Profiles →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. LEGACY -->
+<section style="background:white;padding:var(--sp-v) var(--sp-h);">
   <div class="inner cfc-2col-grid">
     <div>
       <span class="section-label">Legacy &amp; Future</span>
@@ -230,7 +230,7 @@ $coreValues = [
   </div>
 </section>
 
-<!-- CTA -->
+<!-- 8. CTA -->
 <section style="background:linear-gradient(135deg,var(--navy) 0%,#0d2d5c 50%,#3a1060 100%);padding:var(--sp-v) var(--sp-h);text-align:center;">
   <div class="inner">
     <h2 style="font-size:clamp(1.5rem,4vw,2.5rem);color:white;margin-bottom:.8rem;">Come &amp; Be Part of the <em style="color:var(--light);font-style:normal;">Community</em></h2>
