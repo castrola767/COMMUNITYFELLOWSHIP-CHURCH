@@ -17,20 +17,18 @@ $activeNav = $activeNav ?? '';
 <body>
 
 <header class="cfc-header">
-
-  <!-- ROW 1: Logo + Church Name + Visit button -->
+  <!-- TOP ROW: logo | name (centred) | visit btn -->
   <div class="cfc-header-top">
-    <a href="index.php" class="cfc-logo-link">
-      <img src="images/logo.jpg" alt="CFC Logo" class="cfc-nav-logo"/>
-      <div class="cfc-brand-text">
-        <span class="cfc-brand-main">Community Fellowship Church</span>
-        <span class="cfc-brand-sub">Kanyariri · Kenya</span>
-      </div>
+    <a href="index.php" class="cfc-logo-link" aria-label="Home">
+      <img src="images/logo.jpg" alt="CFC" class="cfc-nav-logo"/>
     </a>
+    <div class="cfc-brand-centre">
+      <span class="cfc-brand-main">Community Fellowship Church</span>
+      <span class="cfc-brand-sub">Kanyariri &middot; Kenya</span>
+    </div>
     <a href="contact.php" class="cfc-visit-btn">Visit Us</a>
   </div>
-
-  <!-- ROW 2: Nav links (scrollable on phones) -->
+  <!-- NAV ROW -->
   <nav class="cfc-nav-row" aria-label="Main navigation">
     <a href="index.php"     class="cfc-nav-link <?php if($activeNav==='home')     echo 'active';?>">Home</a>
     <a href="about.php"     class="cfc-nav-link <?php if($activeNav==='about')    echo 'active';?>">About</a>
@@ -40,5 +38,4 @@ $activeNav = $activeNav ?? '';
     <a href="give.php"      class="cfc-nav-link <?php if($activeNav==='give')     echo 'active';?>">Give</a>
     <a href="contact.php"   class="cfc-nav-link <?php if($activeNav==='contact')  echo 'active';?>">Contact</a>
   </nav>
-
 </header>

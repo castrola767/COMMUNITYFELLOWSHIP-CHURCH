@@ -9,7 +9,7 @@ require 'includes/header.php';
   <div class="hero-orb orb1"></div>
   <div class="hero-orb orb2"></div>
   <div class="hero-content">
-    <div style="margin-bottom:1.2rem;animation:fadeUp .8s ease both;">
+    <div style="margin-bottom:1rem;animation:fadeUp .8s ease both;display:flex;justify-content:center;">
       <img src="images/logo.jpg" alt="CFC Kanyariri" class="hero-logo"/>
     </div>
     <div class="hero-badge">✦ Welcome to CFC Kanyariri — Est. July 2007 ✦</div>
@@ -109,8 +109,8 @@ require 'includes/header.php';
       <?php
       $services = [
         ['In-Person','SUNDAY','Morning Service','8:00 AM','Join us for praise, worship, and the preaching of the Full Gospel every Sunday morning.',false],
-        ['⭐ Main Service','SUNDAY','Main Worship','10:00 AM','Our main celebration gathering with full worship, children\'s ministry, and a Word from the Lord.',true],
-        ['Midweek','WEDNESDAY','Bible Study','6:30 PM','Dive deeper into the Scriptures in a relaxed, interactive setting for growing disciples.',false],
+        ['⭐ Main Service','SUNDAY','Main Worship','10:30 AM – 1:00 PM','Our main celebration gathering — preceded by Bible Study from 10:00–10:30 AM.',true],
+        ['Midweek','WEDNESDAY','Bible Study','6:30 PM','Dive deeper into the Scriptures in a relaxed, interactive midweek setting for growing disciples.',false],
       ];
       foreach($services as $s): $cls=$s[5]?' featured':''; ?>
       <div class="service-card<?php echo $cls;?>">

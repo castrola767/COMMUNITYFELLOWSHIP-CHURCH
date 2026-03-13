@@ -5,7 +5,8 @@ require 'includes/header.php';
 
 $serviceTimes = [
   ['Sunday','Morning Service','8:00 AM'],
-  ['Sunday','Main Worship','10:00 AM'],
+  ['Sunday','Bible Study','10:00 – 10:30 AM'],
+  ['Sunday','Main Worship','10:30 AM – 1:00 PM'],
   ['Wednesday','Bible Study','6:30 PM'],
 ];
 $topics = [
